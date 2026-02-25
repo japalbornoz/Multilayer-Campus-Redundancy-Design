@@ -48,21 +48,40 @@ A simplified three-tier campus architecture was implemented:
 ```mermaid
 flowchart TB
 
-  subgraph Distribution_Layer
+  subgraph Distribution
     DSW1["DSW1 - Multilayer Switch"]
     DSW2["DSW2 - Multilayer Switch"]
   end
 
-  subgraph Access_Layer
+  subgraph Access
     ASW1["ASW1 - Access Switch"]
     ASW2["ASW2 - Access Switch"]
   end
 
   DSW1 <--> DSW2
+
   DSW1 --> ASW1
-  DSW1 --> ASW2
   DSW2 --> ASW1
+
+  DSW1 --> ASW2
   DSW2 --> ASW2
+
+  subgraph VLAN20["VLAN 20 - Engineering"]
+    PC1["PC1"]
+  end
+
+  subgraph VLAN30["VLAN 30 - HR"]
+    PC2["PC2"]
+  end
+
+  subgraph VLAN10["VLAN 10 - IT"]
+    PC3["PC3"]
+    SRV1["SRV1"]
+  end
+
+  ASW1 --> VLAN20
+  ASW1 --> VLAN30
+  ASW2 --> VLAN10
 ```
 
 ---
