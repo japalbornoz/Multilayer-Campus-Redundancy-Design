@@ -43,7 +43,9 @@ A simplified three-tier campus architecture was implemented:
 
 ---
 
-## 4. Logical Topology
+## 4. Network and Logical Topology
+
+ <img src="Network%20Topology%20(Physical).png" width="800">
 
 ```mermaid
 flowchart TB
