@@ -44,3 +44,43 @@ interface GigabitEthernet0/1
  shutdown
 interface GigabitEthernet0/2
  shutdown
+```
+## Observed Result
+  - After shutting down the forwarding and trunk interfaces on DSW1:
+  - hosts in affected VLANs were still able to reach the HSRP virtual gateway
+  - inter-VLAN communication remained available through DSW2
+  - failover behavior was successfully demonstrated in Packet Tracer
+This confirmed that first-hop redundancy was functioning as intended.
+
+## Validation Method
+Failover was validated using:
+  - host ping tests
+  - HSRP role observation where available
+  - end-to-end connectivity checks before and after the simulated failure
+
+## Commands Used
+The following commands were used during this test:
+```plaintext
+show standby brief
+show interfaces trunk
+ping <default-gateway>
+ping <remote-host>
+```
+
+## Evidence
+
+### Before Failure
+![DSW1 before failure](images/dsw1-before-failure.png)
+
+### During Failover
+![DSW2 during failover](images/dsw2-during-failover.png)
+
+### Connectivity After Failover
+![Ping success after failover](images/ping-success-after-failover.png)
+
+## Notes
+This test used operational path failure rather than shutting down individual SVIs because Packet Tracer handled switch-path loss more predictably than interface-level HSRP state testing.
+
+## Result
+HSRP failover validation passed.
+The standby distribution switch successfully maintained gateway availability and end-to-end connectivity after loss of the active distribution switch path.
