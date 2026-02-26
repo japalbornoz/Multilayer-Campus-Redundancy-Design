@@ -61,18 +61,21 @@ This provided split first-hop gateway ownership across the two distribution swit
 ## Connectivity Verification
 Baseline ping tests were successful.
 
-### Verified results
-- hosts in VLAN 10 successfully reached:
-  - their default gateway
-  - hosts in other VLANs
+### Verified Results
+- Hosts in VLAN 10 successfully reached:
+  - the HSRP virtual default gateway
+  - hosts in VLAN 20
+  - hosts in VLAN 30
 
-- hosts in VLAN 20 successfully reached:
-  - their default gateway
-  - hosts in other VLANs
+- Hosts in VLAN 20 successfully reached:
+  - the HSRP virtual default gateway
+  - hosts in VLAN 10
+  - hosts in VLAN 30
 
-- hosts in VLAN 30 successfully reached:
-  - their default gateway
-  - hosts in other VLANs
+- Hosts in VLAN 30 successfully reached:
+  - the HSRP virtual default gateway
+  - hosts in VLAN 10
+  - hosts in VLAN 20
 
 ## Commands Used
 The following commands were used during baseline validation:
@@ -100,3 +103,8 @@ DSW2 baseline HSRP state:
 Example successful baseline ping tests:
 
 ![Baseline ping test](images/baseline-ping-test.png)
+
+## Result
+Baseline validation passed.
+
+The topology was confirmed to be stable and ready for failover testing.
