@@ -143,7 +143,7 @@ This design provides split default-gateway ownership while preserving first-hop 
 ---
 
 ## 7. Validation & Verification
-Validation results are documented in the validation/directory.
+Validation results are documented in the [`validation/`](validation/) directory.
 
 ### Baseline Validation
 The following were verified before failover testing:
