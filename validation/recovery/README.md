@@ -66,10 +66,16 @@ This confirmed that the topology recovered cleanly after failover testing.
 ## Evidence
 
 ### HSRP Recovery State
+DSW1 and DSW2 HSRP state after recovery:
+![DSW1 HSRP recovery](images/dsw1-and-dsw2-hsrp-recovery.png)
 
 ### Trunk Recovery State
+DSW1 trunk operational state after recovery:
+![DSW2 HSRP recovery](images/dsw2-hsrp-recovery.png)
 
 ### Connectivity After Recovery
+Successful host connectivity after restoring the topology:
+![Ping success after recovery](images/ping-after-recovery.png)
 
 ## Notes
 Recovery validation is important because redundancy testing is incomplete unless the network can also return to its original steady-state design after the fault is removed.
