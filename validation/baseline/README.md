@@ -83,3 +83,20 @@ show interfaces trunk
 show standby brief
 ping <default-gateway>
 ping <remote-host>
+```
+
+## Evidence
+
+### HSRP Baseline
+DSW1 baseline HSRP state:
+
+![DSW1 HSRP baseline](images/dsw1-show-standby-brief.png)
+
+DSW2 baseline HSRP state:
+
+![DSW2 HSRP baseline](images/dsw2-show-standby-brief.png)
+
+### Baseline Connectivity
+Example successful baseline ping tests:
+
+![Baseline ping test](images/baseline-ping-test.png)
