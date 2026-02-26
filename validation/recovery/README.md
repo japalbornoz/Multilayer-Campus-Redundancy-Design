@@ -53,3 +53,28 @@ show spanning-tree vlan 20
 show spanning-tree vlan 30
 ping <default-gateway>
 ping <remote-host>
+```
+
+## Observed Result
+After restoring the previously disabled interfaces:
+  - HSRP roles returned to the intended design
+  - trunk links returned to normal operation
+  - STP re-established the expected forwarding and blocking behavior
+  - hosts in all VLANs regained or maintained full connectivity
+This confirmed that the topology recovered cleanly after failover testing.
+
+## Evidence
+
+### HSRP Recovery State
+
+### Trunk Recovery State
+
+### Connectivity After Recovery
+
+## Notes
+Recovery validation is important because redundancy testing is incomplete unless the network can also return to its original steady-state design after the fault is removed.
+
+## Result
+Recovery validation passed.
+
+The multilayer campus topology successfully returned to the intended baseline state after failover testing.
