@@ -71,7 +71,7 @@ DSW1 and DSW2 HSRP state after recovery:
 
 ### Trunk Recovery State
 DSW1 trunk operational state after recovery:
-![DSW2 HSRP recovery](images/dsw2-hsrp-recovery.png)
+![DSW1 trunk recovery](images/dsw1-trunk-recovery.png)
 
 ### Connectivity After Recovery
 Successful host connectivity after restoring the topology:
