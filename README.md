@@ -93,7 +93,7 @@ flowchart TB
 
 ---
 
-## 5. VLAN & IP Addressing Plan
+## 5. VLAN and IP Addressing Plan
 | VLAN | Name                  | Subnet          | Virtual Gateway |
 | ---- | --------------------- | --------------- | --------------- |
 | 10   | IT_ADMIN              | 192.168.10.0/24 | 192.168.10.254  |
@@ -125,17 +125,19 @@ This was done to:
   - Access switches dual-homed to both distribution switches
   - Explicit VLAN allow-list configured on trunks
   - Native VLAN set to VLAN 999
-  - DTP disabled using switchport nonegotiate
+  - DTP disabled using `switchport nonegotiate`
 
 ### 6.4 HSRP First-Hop Redundancy
 HSRP was configured on the distribution-layer SVIs to provide default-gateway redundancy.
-HSRP active gateway ownership
-  - DSW1 active
-    - VLAN 10
-    - VLAN 20
-  - DSW2 active
-    - VLAN 30
-      
+
+#### HSRP Active Gateway Ownership
+- **DSW1 active**
+  - VLAN 10
+  - VLAN 20
+
+- **DSW2 active**
+  - VLAN 30
+
 This design provides split default-gateway ownership while preserving first-hop redundancy.
 
 ---
@@ -174,15 +176,15 @@ After failure testing, interfaces were restored and the topology was checked to 
 
 ## 8. Commands Used for Verification
 ### Layer 2 Verification
-  - show vlan brief
-  - show interfaces trunk
-  - show spanning-tree
-  - show spanning-tree vlan <id>
+- `show vlan brief`
+- `show interfaces trunk`
+- `show spanning-tree`
+- `show spanning-tree vlan <id>`
 
 ### Layer 3 / Gateway Verification
-  - show ip interface brief
-  - show standby brief
-  - ping <destination>
+- `show ip interface brief`
+- `show standby brief`
+- `ping <destination>`
 
 ---
 
