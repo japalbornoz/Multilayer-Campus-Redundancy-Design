@@ -70,7 +70,7 @@ This confirmed that the topology recovered cleanly after failover testing.
 ### HSRP Recovery State
 DSW1 and DSW2 HSRP state after recovery:
 
-![DSW1 HSRP recovery](images/dsw1-and-dsw2-hsrp-recovery.png)
+![DSW1 and DSW2 HSRP recovery](images/dsw1-and-dsw2-hsrp-recovery.png)
 
 ### Trunk Recovery State
 DSW1 trunk operational state after recovery:
