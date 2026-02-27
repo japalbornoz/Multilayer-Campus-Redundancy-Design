@@ -57,10 +57,12 @@ ping <remote-host>
 
 ## Observed Result
 After restoring the previously disabled interfaces:
-  - HSRP roles returned to the intended design
-  - trunk links returned to normal operation
-  - STP re-established the expected forwarding and blocking behavior
-  - hosts in all VLANs regained or maintained full connectivity
+
+- HSRP roles returned to the intended design
+- trunk links returned to normal operation
+- STP re-established the expected forwarding and blocking behavior
+- hosts in all VLANs regained or maintained full connectivity
+
 This confirmed that the topology recovered cleanly after failover testing.
 
 ## Evidence
