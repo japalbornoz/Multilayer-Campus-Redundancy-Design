@@ -57,12 +57,6 @@ This confirmed that first-hop redundancy was functioning as intended.
 
 ## Validation Method
 Failover was validated using:
-  - host ping tests
-  - HSRP role observation where available
-  - end-to-end connectivity checks before and after the simulated failure
-
-## Validation Method
-Failover was validated using:
 
 - host ping tests
 - HSRP role observation where available
@@ -94,4 +88,4 @@ This test used operational path failure rather than shutting down individual SVI
 ## Result
 HSRP failover validation passed.
 
-To simulate failure of the active distribution switch path, forwarding and trunk interfaces on DSW1 were administratively shut down.
+The standby distribution switch successfully maintained gateway availability and end-to-end connectivity after loss of the active distribution switch path.
