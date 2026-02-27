@@ -36,7 +36,7 @@ The following baseline conditions were verified before failover testing:
   - VLAN 20 active gateway on DSW1
   - VLAN 30 active gateway on DSW2
 - hosts in each VLAN successfully reached:
-  - their default gateway
+  - the HSRP virtual default gateway
   - hosts in other VLANs
 
 ## HSRP Design Intent
@@ -75,3 +75,4 @@ The project successfully demonstrated:
 - first-hop redundancy using HSRP
 - Layer 2 path redundancy using STP
 - connectivity continuity during fault scenarios
+
