@@ -44,9 +44,10 @@ This confirmed that Layer 2 path redundancy was functioning as intended.
 
 ## Validation Method
 Failover was validated using:
-  - host ping tests
-  - trunk state checks
-  - STP operational observations before and after the simulated failure
+
+- host ping tests
+- trunk state checks
+- STP operational observations before and after the simulated failure
 
 ## Commands Used
 The following commands were used during this test:
@@ -58,6 +59,7 @@ ping <remote-host>
 ```
 
 ## Evidence
+
 ### Before Failure
 ![ASW1 before failure](images/asw1-before-failure.png)
 
