@@ -18,7 +18,7 @@ The following VLANs were confirmed to exist on all switches:
 - VLAN 10 - IT_ADMIN
 - VLAN 20 - ENGINEERING
 - VLAN 30 - HR
-- VLAN 99 - MGMT / MANAGEMENT
+- VLAN 99 - MANAGEMENT
 - VLAN 999 - NATIVE_BLACKHOLE
 
 ## Trunk Verification
