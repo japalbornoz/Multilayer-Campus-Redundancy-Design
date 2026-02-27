@@ -42,7 +42,7 @@ A simplified campus design was implemented using a distribution and access layer
 |------------|------------|
 | Router-on-a-Stick | Multilayer switching with SVIs |
 | Single uplink path | Redundant distribution-layer uplinks |
-| Limited resiliency | First-hop and Layer 2 redundancy |
+| Limited redundancy | First-hop and Layer 2 redundancy |
 | Default STP behavior | Explicit STP root placement |
 | External router for inter-VLAN routing | On-switch hardware-based routing |
 
@@ -51,6 +51,7 @@ A simplified campus design was implemented using a distribution and access layer
 ## 4. Network and Logical Topology
 
 <img src="Network%20Topology.png" width="800">
+
 
 ```mermaid
 flowchart TB
