@@ -65,7 +65,7 @@ ping <remote-host>
 ![ASW1 during failover](images/asw1-during-failover.png)
 
 ### Connectivity After Reconvergence
-![Ping success after reconvergence](images/ping-success-after-failover.png)
+![Ping success after reconvergence](images/ping-success-after-reconvergence.png)
     
 ## Notes
 This test focused on Layer 2 path failover only. HSRP remained in place to provide first-hop gateway redundancy, but the purpose of this validation was to confirm that redundant switched paths remained usable after uplink loss.
