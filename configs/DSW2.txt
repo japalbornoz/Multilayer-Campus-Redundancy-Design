@@ -1,7 +1,7 @@
-DSW2(config)#do sh run
+DSW2#sh run
 Building configuration...
 
-Current configuration : 2494 bytes
+Current configuration : 2510 bytes
 !
 version 12.2(37)SE1
 no service timestamps log datetime msec
@@ -49,7 +49,7 @@ interface FastEthernet0/3
 !
 interface FastEthernet0/4
  switchport trunk native vlan 999
- switchport trunk allowed vlan 10,20,30,99
+ switchport trunk allowed vlan 10,20,30,99,999
  switchport trunk encapsulation dot1q
  switchport mode trunk
  switchport nonegotiate
@@ -59,7 +59,7 @@ interface FastEthernet0/5
 !
 interface FastEthernet0/6
  switchport trunk native vlan 999
- switchport trunk allowed vlan 10,20,30,99
+ switchport trunk allowed vlan 10,20,30,99,999
  switchport trunk encapsulation dot1q
  switchport mode trunk
  switchport nonegotiate
@@ -120,14 +120,14 @@ interface FastEthernet0/24
 !
 interface GigabitEthernet0/1
  switchport trunk native vlan 999
- switchport trunk allowed vlan 10,20,30,99
+ switchport trunk allowed vlan 10,20,30,99,999
  switchport trunk encapsulation dot1q
  switchport mode trunk
  switchport nonegotiate
 !
 interface GigabitEthernet0/2
  switchport trunk native vlan 999
- switchport trunk allowed vlan 10,20,30,99
+ switchport trunk allowed vlan 10,20,30,99,999
  switchport trunk encapsulation dot1q
  switchport mode trunk
  switchport nonegotiate
