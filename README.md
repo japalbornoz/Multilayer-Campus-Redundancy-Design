@@ -99,7 +99,7 @@ flowchart TB
 | 10   | IT_ADMIN              | 192.168.10.0/24 | 192.168.10.254  |
 | 20   | ENGINEERING           | 192.168.20.0/24 | 192.168.20.254  |
 | 30   | HR                    | 192.168.30.0/24 | 192.168.30.254  |
-| 99   | MGMT                  | 192.168.99.0/24 | 192.168.99.254  |
+| 99   | MaNAGEMENT            | 192.168.99.0/24 | 192.168.99.254  |
 | 999  | NATIVE_BLACKHOLE      | No Hosts        | N/A             |
 
 Inter-VLAN routing is performed using Switch Virtual Interfaces (SVIs).
