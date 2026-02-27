@@ -34,10 +34,12 @@ interface FastEthernet0/4
 
 ## Observed Result
 After shutting down the selected access-switch uplink:
-  - traffic continued through the alternate path
-  - hosts were still able to reach the HSRP virtual gateway
-  - inter-VLAN communication remained available
-  - STP reconvergence behavior was successfully demonstrated in Packet Tracer
+
+- traffic continued through the alternate path
+- hosts were still able to reach the HSRP virtual gateway
+- inter-VLAN communication remained available
+- STP reconvergence behavior was successfully demonstrated in Packet Tracer
+
 This confirmed that Layer 2 path redundancy was functioning as intended.
 
 ## Validation Method
@@ -46,7 +48,7 @@ Failover was validated using:
   - trunk state checks
   - STP operational observations before and after the simulated failure
 
-Commands Used
+## Commands Used
 The following commands were used during this test:
 ```plaintext
 show interfaces trunk
@@ -63,9 +65,9 @@ ping <remote-host>
 ![ASW1 during failover](images/asw1-during-failover.png)
 
 ### Connectivity After Reconvergence
-![Ping success after failover](images/ping-success-after-failover.png)
+![Ping success after reconvergence](images/ping-success-after-failover.png)
     
-##Notes
+## Notes
 This test focused on Layer 2 path failover only. HSRP remained in place to provide first-hop gateway redundancy, but the purpose of this validation was to confirm that redundant switched paths remained usable after uplink loss.
 
 ## Result
